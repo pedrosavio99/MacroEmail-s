@@ -1,0 +1,6 @@
+ola, Pedro S.
+Esse texto aqui não tem sentido alguem e so serve pra ver ser a cr esta funcionando em 3/6/2021
+
+
+eis aqui um exemplo de uma macro ja configurada com seu nome e a data de hoje, caso queira adicionar mais variaveis basta copiar os comando de mf0 no codigo email_index.html e criar novas variaveis e implemntar em suas macros.
+

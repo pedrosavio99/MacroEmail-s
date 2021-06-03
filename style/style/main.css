@@ -1,0 +1,171 @@
+
+/** o asterisco em css serve para aplicar a mudança a todo o arquivo */
+/*pratica legal de se definair uma vari vel no css pras cores ai vc pode alterar o site todo de forma simples */
+:root{
+    --vermelho: #e68637;
+    --vermelho2: #f7150e;
+    --vermelho3: #ddec09;
+    --preto: #080101;
+
+}
+
+
+*{
+    /*aqui a gente tirou as formatações base dos navegadores */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ========== ELEMENTOS DE BASE ======================*/
+body{
+    /*aqui foi configurado a cor de fundo de nosso site*/
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(255, 255, 255); /* aqui eu mudo a cor da fonte*/
+}
+
+
+header .container{
+   /* border: 1px solid black; */
+   /* mermao pra definir essas referencias é melhor definar a class e ja vir com o nome dela copiado pra por depois do ponto*/
+   /* aqui eu coloquei display flex pra poder configurar a caixa do conteiner */  
+   margin-left: 8px;
+   display: flex;
+   flex-direction:  row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .Logo{
+    color: var(--vermelho3);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+}
+
+header nav a{
+    /* aqui eu configurei os elemntos a dentro do header */
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header nav a:hover{
+    /*esse hover é pica ele serve pra letrinha mudar de cor quando passa o mouse em cima */
+   /* color: #fff; */
+    color: rgb(203, 216, 29);
+}
+
+/* ==========ELEMENTOS DO FILME PRINCIPAL ============*/
+
+.filme1{
+    /*margin-left: 400px;*/
+    font-size: 12PX;
+    /*esse codigo aqui em baixo serve pra da um gradiente no backhround*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmpPBseT1mOl_1dYLuwvvxK_O475cNoUAbA&usqp=CAU);    /*('/imagens/samuraicapa.jpg');*/
+    height: 300px;
+    background-size: cover; /* como esses comandos eu defini o tamnho e como centralizar a imagem*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0.6%;
+    
+
+}
+
+main  .descricao{
+    margin-left: 100px;
+    font-size: 500;
+
+}
+
+.titulo{ /*
+    aqui so mudei o tamnho da fonte de titulo
+     esses margin não sei oq lá servem pra ir colocando 
+     a caixa onde vc quer */
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main p{
+    margin-left: 110px;
+    margin-bottom: 30px;
+}
+
+main .botoes{
+    /* isso foi pra deixar o div botoes na msm formatação da descrição*/
+
+    margin-left: 100px;
+
+}
+
+.botao{
+    /*aqui to dando estilos visuais aos botoes*/
+    background-color: rgba(145, 255, 0, 0.5);
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+/* espaçamento do botçao aqui pra ficar estily*/
+.botao i{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+
+/*aqui eu criei a classe pra configurar o tamanha das imagens do carosel */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+
+}
+
+.carrosel-filmes{
+    margin-top: 2%;
+}
+
+body .caixa{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botoes2{
+    /* isso foi pra deixar o div botoes na msm formatação da descrição*/
+    background-color: rgba(255, 239, 10, 0.932);
+    color: rgb(27, 27, 27);
+
+    padding: 5px 10px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+
+    margin-left: 6px;
+
+}
+
+body .descricao{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+    ;
+}

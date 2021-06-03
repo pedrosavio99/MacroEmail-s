@@ -1,0 +1,28 @@
+/* esse arquivo serve pra formatar o site de acrodo com o tamanho da tela do dispositivo */
+
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .botao{
+        margin-top: 8px;
+        width: 150px;
+        height: 55px;
+        font-size: 10px;
+        font-display: auto;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 50%
+    }
+    
+}

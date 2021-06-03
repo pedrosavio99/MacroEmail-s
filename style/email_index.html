@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css"> <!-- aqui eu criei a referencia ao documento onde esta os estilos css-->
+    <!-- Resposividade-->
+    <link rel="stylesheet" href="/style/style/responsivo.css">
+    <!-- aqui são os arquivos owl css que conseguimos baixando e criando as pastar é so ler o amvGO.txt na parte "carrosel"-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!-- crl + space vc consegue navegar nos arquivos ali entre parenteses!-->
+    <title>Auto Macro</title>
+  </head>
+  <body>
+    <header> <!-- aqui temos o cabessaçho uma pequana caixa com algumas opções gerais no site-->
+        <div class="container"> 
+            <h2 class="Logo">Macros automáticas</h2>
+        </div>
+    </header> 
+
+    <main>
+        <!--criei essa diva pra criar o poster principal-->
+        <div class="filme1">
+            <div class="container">
+
+                <p class = "descricao"> Digite seu nome na caixa de dialogo a baixo e clique em " CONFIGURAR NOME ", pronto basta escolher uma macro, clicar e colar no seu email!
+                    </p>
+             
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="caixa"> 
+
+    
+    <label id ="l"> Clique em uma macro ====</label>
+<input id="n">
+<!-- aqui eu adiciono os botoes a tela de opções-->
+<button class="botoes2" onclick="mf0()">CONFIGURAR NOME</button>
+<button class="botoes2" onclick="mf1()">uma macro qualquer</button>
+
+<!-- aqui em js eu adiciono as funções que o botão chama -->
+<script language=javascript type="text/javascript">
+
+function mf0(){
+nome = document.getElementById("n").value;
+nome = (nome + "");
+document.getElementById("l").innerHTML= "Nome Configurado =========";
+setTimeout(function(){document.getElementById("l").innerHTML="Clique em uma cr =============";}, 2500);
+}
+
+
+
+function mf1(){
+    
+now= new Date
+var d =( now.getDate() + "/" + (now.getMonth()+1)+ "/" + now.getFullYear() );
+var c = document.createElement("textarea");
+document.getElementById("l").innerHTML= "Macro copiada! =========";
+setTimeout(function(){document.getElementById("l").innerHTML="Clique em uma cr =============";}, 2500);
+c.value=("ola, "+ nome +"\nEsse texto aqui não tem sentido alguem e so serve pra ver ser a cr esta funcionando em " + d);
+document.body.appendChild(c);
+c.select();
+document.execCommand("copy");
+document.body.removeChild(c);
+
+}
+
+
+		</script>  
+    </div>
+  </body>
+</html>
+
+
